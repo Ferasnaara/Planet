@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etNameAddPlanet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="45dp"
+            android:ems="10"
+            android:hint="Name..."
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/etDistanceAddPlanet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etDistanceAddPlanet"
+            android:layout_width="204dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="45dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Distance....."
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/etNameAddPlanet"
+            app:layout_constraintTop_toBottomOf="@+id/etNameAddPlanet" />
+
+        <EditText
+            android:id="@+id/etSizeAddPlanet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="Size..."
+            android:inputType="number|numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/etDistanceAddPlanet"
+            app:layout_constraintTop_toBottomOf="@+id/etDistanceAddPlanet" />
+
+        <Button
+            android:id="@+id/btnAddAddPlanet"
+            android:layout_width="161dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="236dp"
+            android:text="Add"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etOrbitAddPlanet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="Orbit..."
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSizeAddPlanet" />
+
+        <ImageButton
+            android:id="@+id/btnBackAddPlanet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/baseline_arrow_back_24"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
